@@ -48,13 +48,35 @@ def _str() -> None:
 
 
 def _open() -> None:
+    """
+    open() : Open file and return a corresponding file object.
+    """
     with open(r'D:\Temp\test.txt', 'r', encoding='utf-8') as f:
         data = f.read()
         print(data)
 
 
+class User:
+    def __init__(self, name: str, age: int) -> None:
+        self.name = name
+        self.age = age
+
+
+def _getattr() -> None:
+    """
+    getattr() : Return the value of the named attribute of object.
+    If the named attribute does not exist, default is returned if provided,
+    otherwise AttributeError is raised.
+    """
+    user = User('adele', 35)
+    print(f'Hello, {getattr(user, 'name')}')
+
+    nationality = getattr(user, 'nationality', 'France')
+    print(f'Are you from {nationality}?')
+
+
 def main():
-    _open()
+    _getattr()
 
 
 if __name__ == '__main__':
