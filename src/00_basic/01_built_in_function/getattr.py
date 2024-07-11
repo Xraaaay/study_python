@@ -1,5 +1,5 @@
 """
-@Description: python doc: https://docs.python.org/zh-cn/3/library/functions.html#open
+@Description: python doc: https://docs.python.org/zh-cn/3/library/functions.html#getattr
 @Author: Xraaaay
 @Time: 2024/7/11
 """
